@@ -1,16 +1,16 @@
 ## Show Users
 
-Page with show users
+Página para mostrar usuários
 
 ## Objective
 
 Construção de página para trabalhar com os components:
 
-- componentDidMount() - Utilizado uma vez pela aplicaçãoyar
+- componentDidMount() 
 - componentDidUpdate()
 - componentWillUnmount()
 
-Mostrando uma lista de usuários lidas da API:https://randomuser.me/
+Com criação de componentes para Usuario e Toogle, mostrando uma lista de usuários capturadas da API: https://randomuser.me/
 
 ## Technologies
 
@@ -33,4 +33,4 @@ You will also see any lint errors in the console.
 
 ## View Page
 
-![](https://github.com/brigor7/showUsers/view.jpg);
+![](https://github.com/brigor7/showUsers/blob/master/view.jpg);
