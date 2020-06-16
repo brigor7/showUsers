@@ -14,7 +14,7 @@ export default class App extends Component {
   async componentDidMount() {
     console.log('componentDidMount de APP.js');
     const res = await fetch(
-      'https://randomuser.me/api/?seed=rush&nat=br&results=10'
+      'https://randomuser.me/api/?seed=rush&nat=br&results=50'
     );
     const json = await res.json();
 
@@ -39,6 +39,7 @@ export default class App extends Component {
     const { showUsers, users } = this.state;
     return (
       <div>
+        <h3>Show Users - React lifecycle</h3>
         <Switch
           onEnable={this.handleShowUsers}
           description="Mostrar usuários:"
