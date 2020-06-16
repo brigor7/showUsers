@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Users from './components/user/Users';
+import Switch from './components/toogle/Switch';
 
 export default class App extends Component {
   constructor() {
@@ -40,13 +41,7 @@ export default class App extends Component {
     console.log(showUsers);
     return (
       <div>
-        <div className="switch">
-          <label>
-            Mostrar usuários:
-            <input type="checkbox" onChange={this.handleShowUsers} />
-            <span className="lever" />
-          </label>
-        </div>
+        <Switch onUsers={this.handleShowUsers} />
         <hr />
         {showUsers && (
           <div>
