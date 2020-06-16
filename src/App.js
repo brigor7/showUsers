@@ -12,16 +12,15 @@ export default class App extends Component {
     };
   }
   async componentDidMount() {
+    console.log('componentDidMount de APP.js');
     const res = await fetch(
       'https://randomuser.me/api/?seed=rush&nat=br&results=10'
     );
     const json = await res.json();
-    console.log(json);
 
     this.setState({
       users: json.results,
     });
-    console.log('componentDidMount de APP.js');
   }
 
   componentDidUpdate() {
@@ -38,7 +37,6 @@ export default class App extends Component {
 
   render() {
     const { showUsers, users } = this.state;
-    console.log(showUsers);
     return (
       <div>
         <Switch
