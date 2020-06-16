@@ -10,6 +10,8 @@ Construção de página para trabalhar com os components:
 - componentDidUpdate()
 - componentWillUnmount()
 
+Mostrando uma lista de usuários lidas da API:https://randomuser.me/
+
 ## Technologies
 
 -Javascript
@@ -31,4 +33,4 @@ You will also see any lint errors in the console.
 
 ## View Page
 
-![](https://github.com/brigor7/buttonsIncrementDecrement/review.jpg);
+![](https://github.com/brigor7/showUsers/view.jpg);
