@@ -41,7 +41,10 @@ export default class App extends Component {
     console.log(showUsers);
     return (
       <div>
-        <Switch onUsers={this.handleShowUsers} />
+        <Switch
+          onEnable={this.handleShowUsers}
+          description="Mostrar usuários:"
+        />
         <hr />
         {showUsers && (
           <div>
