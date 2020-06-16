@@ -2,9 +2,13 @@ import React, { Component } from 'react';
 
 export default class Users extends Component {
   render() {
+    const { users } = this.props;
     return (
       <div>
-        <h4>Users</h4>
+        {users.map((user) => {
+          const { login, name, picture } = user;
+          return <p key={login.uuid}>{user.name.first}</p>;
+        })}
       </div>
     );
   }

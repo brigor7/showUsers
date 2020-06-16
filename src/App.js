@@ -36,7 +36,7 @@ export default class App extends Component {
   };
 
   render() {
-    const { showUsers } = this.state;
+    const { showUsers, users } = this.state;
     console.log(showUsers);
     return (
       <div>
@@ -50,7 +50,7 @@ export default class App extends Component {
         <hr />
         {showUsers && (
           <div>
-            <Users />
+            <Users users={users} />
           </div>
         )}
       </div>
