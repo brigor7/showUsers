@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ProjetoBase from './components/ProjetoBase/ProjetoBase';
+import Users from './components/Users';
 
 export default class App extends Component {
   constructor() {
@@ -48,7 +48,11 @@ export default class App extends Component {
           </label>
         </div>
         <hr />
-        {showUsers ? <div>Users</div> : <div>Não há usuários!</div>}
+        {showUsers && (
+          <div>
+            <Users />
+          </div>
+        )}
       </div>
     );
   }
