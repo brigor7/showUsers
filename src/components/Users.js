@@ -24,7 +24,7 @@ export default class Users extends Component {
   }
 
   componentWillUnmount() {
-    console.log('componentDidWillUnmount de Users.js');
+    clearInterval(this.interval);
   }
   render() {
     const { users } = this.props;
